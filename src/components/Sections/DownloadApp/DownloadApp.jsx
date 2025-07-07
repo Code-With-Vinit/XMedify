@@ -13,11 +13,11 @@ export default function DownloadApp() {
     >
       <Container>
         <Grid container spacing={3} alignItems="center">
-          <Grid item xs={12} md={5.5}>
+          <Grid item size={{ xs: 12, md: 5.5 }}>
             <Box src={mobile} component="img" width={1} height="auto" />
           </Grid>
 
-          <Grid item xs={12} md={6.5}>
+          <Grid item size={{ xs: 12, md: 6.5 }}>
             <Box
               position="relative"
               pl={{ xs: "36px", md: "50px" }}

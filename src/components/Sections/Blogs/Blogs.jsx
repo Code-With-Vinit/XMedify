@@ -15,15 +15,15 @@ function Blogs() {
                 Read Our Latest News
             </Typography>
 
-            <Grid container spacing={4}>
+            <Grid  container spacing={4}>
 
-                <Grid item xs={12} md={4}>
+                <Grid item xs={12} md={4} size={{ xs: 12, md: 4 }}>
                     <BlogCard/>
                 </Grid>
-                <Grid item xs={12} md={4}>
+                <Grid item xs={12} md={4} size={{ xs: 12, md: 4 }}>
                     <BlogCard/>
                 </Grid>
-                <Grid item xs={12} md={4}>
+                <Grid item xs={12} md={4} size={{ xs: 12, md: 4 }}>
                     <BlogCard/>
                 </Grid>
 

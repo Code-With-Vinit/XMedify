@@ -33,7 +33,7 @@ export default function HeroServices() {
       </Typography>
       <Grid
         container
-        columnSpacing={{ xs: 1, md: 2 }}
+        columnSpacing={{ xs: 2, md: 8 }}
         justifyContent={"center"}
       >
         {Services.map((service) => (

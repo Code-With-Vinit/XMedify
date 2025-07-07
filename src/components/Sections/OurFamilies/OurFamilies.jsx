@@ -11,7 +11,7 @@ function OurFamilies() {
         <Container>
 
             <Grid container alignItems='center' spacing={{xs:2,md:10}}>
-                <Grid item xs={12} md={6}>
+                <Grid item size={{ xs: 12, md: 6 }}>
                     <Typography fontWeight={600} color="primary.main">
                         CARING FOR THE HEALTH OF YOU AND YOUR FAMILY.
                     </Typography>
@@ -25,7 +25,7 @@ function OurFamilies() {
                     </Typography>
                 </Grid>
 
-                <Grid item xs={12} md={6}>
+                <Grid item size={{ xs: 12, md: 6 }}>
                         <Box
                             component="img"
                             src={banner}

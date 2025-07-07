@@ -8,7 +8,7 @@ import icon5 from '../../../assets/blood-test.png'
 import icon6 from '../../../assets/piscologist.png'
 import icon7 from '../../../assets/X-Ray.png'
 
-function Specialization() {
+export default function Specialization() {
 
     const data = [
         { icon: icon1, title: 'Dentistry' },
@@ -21,35 +21,32 @@ function Specialization() {
         { icon: icon7, title: 'X-Ray' }
     ]
 
-  return (
-    
-    <Box py={6} sx={{ background: 'linear-gradient(#E7F0FF, #E8F1FF)' }}>
+    return (
+        <Box py={6} sx={{ background: 'linear-gradient(#E7F0FF, #E8F1FF)' }}>
+            <Container sx={{ textAlign: 'center' }}>
+                <Typography variant="h2" mb={4}>
+                    Find by specialisation
+                </Typography>
 
-        <Container sx={{ textAlign: 'center' }}>
-            <Typography variant="h2" mb={2}>
-                Find by specialisation
-            </Typography>
+                <Grid container spacing={{ xs: 1, md: 3 }}  justifyContent={'center'}>
 
-            <Grid container spacing={{ xs: 1, md: 3 }} mb={5} justifyContent={'center'}>
-                {data.map(item=>( 
-                    <Grid item xs={4} md={3} key={item.title}>
-                        <IconCard img={item.icon} title={item.title} bgColor={"#FFFFFF"} shadow={true}/>
-                    </Grid>
-                ))}
-            </Grid>
+                    {data.map(item => (
+                        <Grid item xs={12} sm={6} md={3} key={item.title} sx={{ width: 250, height: 200}}>
+                            <IconCard img={item.icon} title={item.title} bgColor={'#FFFFFF'} shadow={true}/>
+                        </Grid>
+                    ))}
 
+                </Grid>
 
-            <Button 
-                variant="contained"
-                size="large"
-                disableElevation
-            >
-                View All
-            </Button>
-        </Container>
-    </Box>
-    
-  )
+                <Button
+                    variant="contained"
+                    size="large"
+                    disableElevation
+                >
+                    View All
+                </Button>
+
+            </Container>
+        </Box>
+    )
 }
-
-export default Specialization

@@ -40,7 +40,7 @@ function FAQs() {
 
             <Grid container alignItems="center" spacing={5}>
 
-                <Grid item xs={12} md={6}>
+                <Grid item size={{ xs: 12, md: 6 }}>
                     <Box
                         src={faqBanner}
                         component="img"
@@ -49,7 +49,7 @@ function FAQs() {
                     />
                 </Grid>
 
-                <Grid item xs={12} md={6}>
+                <Grid item size={{ xs: 12, md: 6 }}>
                     <Box maxWidth={450}>
                         <Accordians data={faqs}/>
                     </Box>
