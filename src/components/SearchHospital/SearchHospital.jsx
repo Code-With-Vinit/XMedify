@@ -124,6 +124,8 @@ function SearchHospital() {
 
       <Button
         type="submit"
+        name="Search"
+        id="searchBtn"
         variant="contained"
         size="large"
         startIcon={<SearchIcon />}
